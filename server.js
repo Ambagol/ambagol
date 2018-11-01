@@ -2,7 +2,7 @@
      app = express(),
      path = require("path"),
      bP = require("body-parser"),
-     port = process.env.PORT || 5000,
+     port = process.env.PORT || 8080,
      session = require("express-session");
  // app.use(express.static(path.join(__dirname, "/client/dist/client")));
  let distDir = __dirname + "/dist/ambagol";
