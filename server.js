@@ -12,6 +12,10 @@
  //comment out until mongoose & routes files are built else error
  //require("./server/config/mongoose.js");
  //require("./server/config/routes.js")(app); //importing app and running it immediately
+ app.get('/*', function(req, res) {
+
+     res.sendFile(path.join(__dirname + '/dist/ambagol/index.html'));
+ });
  app.listen(port, function() {
      console.log("listening on port", +port);
  })
