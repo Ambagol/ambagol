@@ -23,7 +23,7 @@
                   <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="">Projects</a>
                   <ul class="dropdown-menu navbg navborder">
                       <li class="nav-item">
-                          <a class="nav-link navbar-dark " href="#studentportal">Student Portal</a>
+                          <a class="nav-link navbar-dark " routerLink = "studentportal">Student Portal</a>
                         </li>
                         <li class="nav-item navbar-dark ">
                             <a class="nav-link navbar-dark " routerLink = "restaurant">Restaurant</a>
@@ -38,25 +38,25 @@
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">Skills</a>
                 <ul class="dropdown-menu navbg">
                     <li class="nav-item">
-                        <a class="nav-link navbar-dark " href="">Angular</a>
+                        <a class="nav-link navbar-dark " routerLink = "skills">Angular</a>
                       </li>
                       <li class="nav-item navbar-dark ">
-                          <a class="nav-link navbar-dark " href="#">Express</a>
+                          <a class="nav-link navbar-dark " routerLink = "skills">Express</a>
                         </li>
                         <li class="nav-item navbar-dark ">
-                            <a class="nav-link navbar-dark " href="#">MongoDB</a>
+                            <a class="nav-link navbar-dark " routerLink = "skills">MongoDB</a>
                           </li>
                           <li class="nav-item navbar-dark ">
-                              <a class="nav-link" href="#">Bootstrap</a>
+                              <a class="nav-link" routerLink = "skills">Bootstrap</a>
                             </li>
                   </ul>
               </li>
              
                 <li class="nav-item">
-                    <a class="nav-link" href="">Resume</a>
+                    <a class="nav-link" routerLink = "resume">Resume</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Connect</a>
+                      <a class="nav-link" routerLink = "connect">Connect</a>
                     </li>
               
             </ul>
@@ -125,9 +125,9 @@
           <!-- Three columns of text below the carousel -->
           <div id="aboutme" class="row ">
             <div class="col-lg-12 ">
-              <img class="rounded-circle " src="../../assets/img/AboutMe.JPG" alt="" width="340" height="340">
+              <img class="rounded-circle " src="../../assets/img/AboutMe.JPG" alt="" width="240" height="240">
               <h2 >About Me</h2>
-              <p>This section will talk something about me and son on and ao bjbdjndjchbfjkmbcjsdn fjwebflijfhejfbiuehfeurbfhciucrghcnrngrghngreuthuncghgfeuhnxlwahurgu uyru fygry3g jhWGF JFHUYGF WJFH2URG UDFH</p>
+              <p>Thank you for stopping by my website. I am known as Ghani in my professional/personal circle. With 12+ years of experience in the corporate world broadly ranging from customer service to mitigating fraud and gathering business requirements, I have finally moved as a developer in the arena of coding. I have completed coding boot camp and work as a Teaching assistant in Skillspire. I also assist with professional and pro bono projects to strengthen my domain knowledge. If you need any assistance, or have questions feel free to contact me. I will be happy to respond within a day.</p>
               <p><a class="btn btn-secondary" href="" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <!-- <div class="col-lg-4">
@@ -153,8 +153,8 @@
           <div id="projects" >
           <div class="row featurette">
             <div class="col-md-7">
-              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <h2 class="featurette-heading">Student-Portal</h2>
+              <p class="lead">Student-Portal is a project focused on creating a centrallized place for students of SkillSpire to read through course material, submit assignments.</p>
             </div>
             <div class="col-md-5">
               <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -165,8 +165,8 @@
   
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <h2 class="featurette-heading">Restaurant></h2>
+              <p class="lead">A fun project using Bootstrap to create a website for a restaurant</p>
             </div>
             <div class="col-md-5 order-md-1">
               <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -178,8 +178,8 @@
   
           <div class="row featurette">
             <div class="col-md-7">
-              <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              <h2 class="featurette-heading">E <span class="text-muted">- Store</span></h2>
+              <p class="lead">This application is for an imaginary client to set up their E-store. Application was developed using Angular, Express, Javascript and Mongo DB</p>
             </div>
             <div class="col-md-5">
               <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -191,7 +191,7 @@
           <div class="cardcontainer ">
               <div class="row">
                 <div class="col-4-lg ml-3">
-                  <div class="card " style="width:18rem;">
+                  <div  id = "cardm" class="card ">
                       <i class="fab fa-html5 fa-6x text-center " style=color:#e86228></i>
                     <div class="card-body">
                       <h5 class="card-title">HTML</h5>
@@ -203,7 +203,7 @@
                   
                 </div>
                 <div class="col-4-lg ml-3">
-                    <div class="card" style="width:18rem;">
+                    <div class="card" >
                         <i class="fab fa-css3-alt fa-6x text-center" style=color:#159cd5;></i>
                       <div class="card-body">
                         <h5 class="card-title">CSS</h5>
@@ -216,7 +216,7 @@
                   </div>
                   
                   <div class="col-4-lg ml-3">
-                      <div class="card" style="width:18rem;">
+                      <div class="card" >
                           <i class="fab fa-node-js  fa-6x text-center text-success"></i>
                        
                         <div class="card-body">

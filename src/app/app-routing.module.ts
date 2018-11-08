@@ -10,11 +10,17 @@ import { ConnectComponent } from './connect/connect.component';
 
 
 
+
 const routes: Routes = [
   {path: '',component:LandingPageComponent},
+  {path: 'about', component:AboutComponent},
+  {path:'studentportal',component:StudentPortalComponent},
   {path:'restaurant',component:RestaurantComponent},
-  {path: 'about', component:AboutComponent}
+  {path: 'resume', component:ResumeComponent}, 
+  {path: 'skills', component:SkillsComponent},
+  {path:'connect',component:ConnectComponent},
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
